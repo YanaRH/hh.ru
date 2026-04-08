@@ -1,26 +1,15 @@
-# IDE
+# IntelliJ IDEA - ПОЛНОЕ ИЗБАВЛЕНИЕ
 .idea/
+.idea_modules/
+
+# *.iml файлы генерируются IDE
+*.iml
+
+# JDT (Eclipse)
+*.class
+.classpath
+.project
+.settings/
+
+# VSCode
 .vscode/
-*.swp
-*.swo
-
-# Environment
-.env
-.env.local
-.env.*.local
-
-# Dependencies
-node_modules/
-vendor/
-
-# Logs
-logs/
-*.log
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Database
-*.db
-*.sqlite
