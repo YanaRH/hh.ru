@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hh-parser"
+version = "1.0.0"
+description = "HH.ru вакансии в PostgreSQL"
+dependencies = [
+    "requests>=2.28.0",
+    "psycopg2-binary>=2.9.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-mock>=3.15.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+hh-parser = "hh_parser.main:main"  # ← ТОЧКА ВХОДА
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=hh_parser --cov-report=term-missing"
