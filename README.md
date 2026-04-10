@@ -1,6 +1,6 @@
 # HH.ru Parser
 
-Парсер вакансий с HeadHunter и анализ данных в PostgreSQL.
+Парсер вакансий с HeadHunter и анализ данных в PostgreSQL
 
 ## Установка
 
