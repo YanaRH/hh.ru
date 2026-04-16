@@ -1,4 +1,4 @@
-# HH.ru Parser
+# HH.ru Parser.
 
 Парсер вакансий с HeadHunter и анализ данных в PostgreSQL
 
